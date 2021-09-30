@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelectorAll(".form__input").forEach(inputElement => {
         inputElement.addEventListener("blur", e => {
-            if (e.target.id ==="signupUsername" && e.target.value.length > 0 && e.target.value.length < 6){
+            if (e.target.id ==="signupUsername" && e.target.value.length > 0 && e.target.value.length < 4){
                 setInputError(inputElement, "Username must be at least 4 characters in length");
             }
         });
